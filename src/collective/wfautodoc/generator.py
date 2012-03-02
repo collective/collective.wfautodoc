@@ -47,9 +47,20 @@ def generate_gv(context):
     
     for state, trans in state_to_trans:
         tob = wf.transitions[trans]
-        title = wrap(tob.title or tob.getId(), 19)
-        table = '<TABLE BORDER="0" BGCOLOR="lightgrey"><TR><TD colspan="2">%s</TD></TR>\n' % title
-        proptable = [ ['id' , trans] ]
+        table = '<TABLE BORDER="0" BGCOLOR="lightgrey"><TR><TD colspan="2">'
+        table += wrap(tob.title or tob.getId(), 19)
+        table += '<BR /><FONT POINT-SIZE="10">id=%s</FONT>' % trans        
+        table += '</TD></TR>\n'
+        proptable = []
+        guard = tob.getGuard()
+        if guard.permissions:
+            proptable.append(['permissions', '<BR />'.join(guard.permissions)])
+        if guard.roles:
+            proptable.append(['roles', '<BR />'.join(guard.roles)])
+        if guard.groups:
+            proptable.append(['groups', '<BR />'.join(guard.groups)])
+        if guard.getExprText():
+            proptable.append(['expression', '<BR />'.join(guard.getExprText())])
         cnt = 0
         for key, value in proptable:
             bgcolor = cnt % 2 and ' BGCOLOR="lightyellow"' or ''

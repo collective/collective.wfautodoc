@@ -31,7 +31,7 @@ setup(name='collective.wfautodoc',
       zip_safe=True,
       install_requires=[
             'setuptools',
-            'pygraphviz',
+            #'pygraphviz',
             'Plone',
             'yafowil.zope2',
             'yafowil.yaml',
