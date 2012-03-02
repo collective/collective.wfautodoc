@@ -1,13 +1,13 @@
 from setuptools import setup, find_packages
 import sys, os
 
-version = '1.1'
-shortdesc = 'Set sort order of plone folders'
+version = '1.0'
+shortdesc = 'Workflow Automatic Documentation for Plone'
 longdesc =  open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()  
 longdesc += open(os.path.join(os.path.dirname(__file__), 'HISTORY.rst')).read()  
 longdesc += open(os.path.join(os.path.dirname(__file__), 'LICENSE.rst')).read()  
 
-setup(name='collective.folderorder',
+setup(name='collective.wfautodoc',
       version=version,
       description=shortdesc,
       long_description=longdesc,
@@ -21,16 +21,17 @@ setup(name='collective.folderorder',
       ],
       keywords='',
       author='Jens Klein    ',
-      author_email='jens@bluedynamics.com',
-      url=u'http://github.com/collective/collective.folderorder',
+      author_email='dev@bluedynamics.com',
+      url=u'http://github.com/collective/collective.wfautodoc',
       license='GPLv2',
       packages=find_packages('src'),
       package_dir = {'': 'src'},
-      namespace_packages=[],
+      namespace_packages=['collective'],
       include_package_data=True,
       zip_safe=True,
       install_requires=[
             'setuptools',
+            'pygraphviz',
             'Plone',
             'yafowil.zope2',
             'yafowil.yaml',
