@@ -50,8 +50,8 @@ def generate_gv(context):
         table = '<TABLE BORDER="0" BGCOLOR="lightgrey"><TR><TD colspan="2">'
         table += wrap(tob.title or tob.getId(), 19)
         table += '<BR /><FONT POINT-SIZE="10">id=%s</FONT>' % trans        
-        table += '</TD></TR>\n'
         proptable = []
+        table += '</TD></TR>\n'
         guard = tob.getGuard()
         if guard.permissions:
             proptable.append(['permissions', '<BR />'.join(guard.permissions)])
