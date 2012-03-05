@@ -5,6 +5,8 @@ Generates a Graphviz File form a workflow defintion.
 
 !! Alpha = Work in progress. !!
 
+.. image:: http://bluedynamics.com/plone_workflow.png
+
 Usage:
 ------
 
