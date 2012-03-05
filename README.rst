@@ -1,7 +1,41 @@
 Automatic Workflow Documentation
 ================================
 
-Write me
+Generates a Graphviz File form a workflow defintion. 
+
+!! Alpha = Work in progress. !!
+
+Usage:
+------
+
+- in ZMI got to the workflow which you want to document.
+
+- on its url call @@wfautodoc_gvfile 
+
+- download the result and process further local:
+
+  - ``dot -Tsvg FILENAME.gv -O `` (on Ubuntu so a ``sudo apt-get install graphviz`` before). 
+
+  - or use ``xdot FILENAME.gv`` (on Ubuntu so a ``sudo apt-get install xdot`` before.
+
+  - there are several other tools available to render graphviz files.
+
+
+Working:
+--------
+
+- generation of Graphviz file with states and transitions.
+- each state has an permissions-table
+- each transition show its guards.
+
+Todo:
+-----
+
+- add tab in ZMI to access view
+
+- add view to render svg/png on server
+
+- add views to control_panel
 
 Installation
 ============
