@@ -33,8 +33,7 @@ setup(name='collective.wfautodoc',
             'setuptools',
             #'pygraphviz',
             'Plone',
-            'yafowil.zope2',
-            'yafowil.yaml',
+            'yafowil.plone',
       ],
       entry_points="""
       [z3c.autoinclude.plugin]
