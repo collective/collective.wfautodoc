@@ -14,7 +14,7 @@ Usage:
 
 
 Features:
---------
+---------
 
 - generation of Graphviz file with states and transitions.
 - each state shows a permissions-table
@@ -28,10 +28,13 @@ Todo:
 Installation
 ============
 
-Just depend in your buildout on the egg ``collective.wfautodoc``. ZCML is
-loaded automagically with z3c.autoinclude.
+Just depend in your buildout on the egg ``collective.wfautodoc``.
+When used within Plone ZCML is loaded automagically with ```z3c.autoinclude```.
+Otherwise add the package to buildout section ```instance``` ```zcml```
+variable.
 
-This package is written for Plone 4.1 or later.
+ This package is written for Plone 4.1 or later but works also in a pure
+ Zope2/CMF environment.
 
 Source Code and Contributions
 =============================
