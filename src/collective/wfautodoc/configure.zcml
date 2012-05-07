@@ -23,4 +23,11 @@
     permission="zope2.View"
   />
 
+  <browser:page
+    for="Products.DCWorkflow.interfaces.IDCWorkflowDefinition"
+    name="wfautodoc_svg"
+    class=".views.SVGFileView"
+    permission="zope2.View"
+  />
+
 </configure>

@@ -1,9 +1,7 @@
 Automatic Workflow Documentation
 ================================
 
-Generates a Graphviz File form a workflow defintion. 
-
-!! Alpha = Work in progress. !!
+Generates a Graphviz File form a workflow defintion.
 
 .. image:: http://bluedynamics.com/plone_workflow.png
 
@@ -12,30 +10,18 @@ Usage:
 
 - in ZMI got to the workflow which you want to document.
 
-- on its url call @@wfautodoc_gvfile 
-
-- download the result and process further local:
-
-  - ``dot -Tsvg FILENAME.gv -O `` (on Ubuntu so a ``sudo apt-get install graphviz`` before). 
-
-  - or use ``xdot FILENAME.gv`` (on Ubuntu so a ``sudo apt-get install xdot`` before.
-
-  - there are several other tools available to render graphviz files.
+- there are two additional tabs one for raw dot data file, one for a rendered svg file.
 
 
-Working:
+Features:
 --------
 
 - generation of Graphviz file with states and transitions.
-- each state has an permissions-table
-- each transition show its guards.
+- each state shows a permissions-table
+- each transition shows its guards.
 
 Todo:
 -----
-
-- add tab in ZMI to access view
-
-- add view to render svg/png on server
 
 - add views to control_panel
 
@@ -44,7 +30,6 @@ Installation
 
 Just depend in your buildout on the egg ``collective.wfautodoc``. ZCML is
 loaded automagically with z3c.autoinclude.
-
 
 This package is written for Plone 4.1 or later.
 
