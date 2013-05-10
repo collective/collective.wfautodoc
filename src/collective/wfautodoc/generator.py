@@ -60,7 +60,7 @@ def generate_gv(context):
         if guard.groups:
             proptable.append(['groups', '<BR />'.join(guard.groups)])
         if guard.getExprText():
-            proptable.append(['expression', '<BR />'.join(guard.getExprText())])
+            proptable.append(['expression', guard.getExprText()])
         cnt = 0
         for key, value in proptable:
             bgcolor = cnt % 2 and ' BGCOLOR="lightyellow"' or ''
