@@ -34,7 +34,6 @@ setup(name='collective.wfautodoc',
             'pygraphviz',
             'Products.CMFCore',
             'Products.DCWorkflow',
-            'Products.GenericSetup',
       ],
       entry_points="""
       [z3c.autoinclude.plugin]
