@@ -40,7 +40,7 @@ def generate_gv(context):
                          (bgcolor, cell)
             table += '</TR>\n'
         table += '</TABLE>'
-        dot += '%s [label=<%s> shape=Mrecord];' % (state.getId(), table)
+        dot += '"%s" [label=<%s> shape=Mrecord];' % (state.getId(), table)
         dot += '\n'
         for trans in state.transitions:
             state_to_trans.append((state.getId(), trans))

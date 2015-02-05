@@ -1,6 +1,12 @@
-
 History
 =======
+
+1.2 (unreleased)
+----------------
+
+- Fix bug with special characters in review states.
+  [cedricmessiant]
+
 
 1.1
 ---
