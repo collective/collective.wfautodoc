@@ -44,12 +44,12 @@ def generate_gv(context):
         dot += '\n'
         for trans in state.transitions:
             state_to_trans.append((state.getId(), trans))
-    
+
     for state, trans in state_to_trans:
         tob = wf.transitions[trans]
         table = '<TABLE BORDER="0" BGCOLOR="lightgrey"><TR><TD colspan="2">'
         table += wrap(tob.title or tob.getId(), 19)
-        table += '<BR /><FONT POINT-SIZE="10">id=%s</FONT>' % trans        
+        table += '<BR /><FONT POINT-SIZE="10">id=%s</FONT>' % trans
         proptable = []
         table += '</TD></TR>\n'
         guard = tob.getGuard()
