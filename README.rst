@@ -3,8 +3,6 @@ Automatic Workflow Documentation
 
 Generates a Graphviz File form a workflow defintion.
 
-.. image:: http://bluedynamics.com/plone_workflow.png
-
 Usage:
 ------
 
@@ -33,7 +31,7 @@ When used within Plone ZCML is loaded automagically with ```z3c.autoinclude```.
 Otherwise add the package to buildout section ```instance``` ```zcml```
 variable.
 
- This package is written for Plone 4.1 or later but works also in a pure
+ This package is written for Plone 5.2 or later but works also in a pure
  Zope2/CMF environment.
 
 Source Code and Contributions

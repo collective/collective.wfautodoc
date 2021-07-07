@@ -4,6 +4,9 @@ History
 1.2 (unreleased)
 ----------------
 
+- Some code-style and make it work with Python 3/ Zope 4. 
+  [jensens]
+
 - Fix bug with special characters in review states.
   [cedricmessiant]
 
