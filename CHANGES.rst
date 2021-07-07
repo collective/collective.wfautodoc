@@ -1,8 +1,8 @@
 History
 =======
 
-1.2 (unreleased)
-----------------
+1.2.0 (2021-07-07)
+------------------
 
 - Some code-style and make it work with Python 3/ Zope 4. 
   [jensens]
